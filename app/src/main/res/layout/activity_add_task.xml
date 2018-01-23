@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pritshah.infotracker.Controller.AddTaskActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        android:text="Task"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Priority of Task (1-9, 9 being lowest importance)"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/enterPriority"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/enterPriority"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:hint="Enter Priority"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/enterTask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelTaskButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/cancelTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="16dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/taskDoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+</android.support.constraint.ConstraintLayout>
